@@ -6,29 +6,25 @@
 
 body {
   height: 100vh;
-
   background-image: url("assets/images/rlycrush-bloody-background.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-
-  color: white;
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 figure img {
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 450px;
 }
 
 #left-half {
+  color: white;
   height: 100%;
-  width: 45%;
-
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,9 +32,93 @@ figure img {
 
 #right-half {
   height: 100%;
-  width: 65%;
-
+  width: 60%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+}
+
+#about-container {
+  width: fit-content;
+  background-color: hsla(228, 2%, 56%, 0.77);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-shadow: black 1px 0 3px;
+}
+
+form {
+  width: fit-content;
+  background-color: hsla(228, 2%, 56%, 0.77);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-row {
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.form-row input {
+  width: 230px;
+  height: 25px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.form-row label {
+  display: block;
+}
+
+.first-form-row {
+  margin-top: 30px;
+  display: flex;
+  gap: 50px;
+}
+
+.second-form-row {
+  display: flex;
+  gap: 50px;
+}
+
+.third-form-row {
+  display: flex;
+  gap: 50px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  text-shadow: black 1px 0 10px;
+}
+
+#submit-button-container {
+  background-color: hsla(228, 2%, 56%, 0.77);
+  font-size: 18px;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
+button[type="submit"] {
+  font-size: 16px;
+  padding: 7px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+figcaption {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
