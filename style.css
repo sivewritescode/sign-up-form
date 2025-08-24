@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  background-image: url("assets/images/rlycrush-bloody-background.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+figure img {
+  width: 400px;
+  height: 400px;
+}
+
+#left-half {
+  height: 100%;
+  width: 45%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#right-half {
+  height: 100%;
+  width: 65%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

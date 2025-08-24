@@ -8,52 +8,52 @@
 </head>
 <body>
 
-  <figure class="image-container">
-    <img src="./assets/images/daunholy-agc-album-cover.jpeg" alt="image of album cover">
-    <figcaption>A Great Chaos album cover.</figcaption>
-  </figure>
+  <div id="left-half">
+    <figure class="image-container">
+      <img src="./assets/images/daunholy-agc-album-cover.jpeg" alt="image of album cover">
+      <figcaption>A Great Chaos album cover.</figcaption>
+    </figure>
+  </div>
 
-  <form id="personal-info-form" action="/my-handling-form-page" post="post">
-
-    <h1>A GREAT CHAOS</h1>
-
-    <div class="first-form-row">
-      <div class="form-row">
-        <label for="first-name">First Name:</label>
-        <input type="text" id="first-name" name="first_name">
+  <div id="right-half">
+    <form id="personal-info-form" action="/my-handling-form-page" post="post">
+      <h1>A GREAT CHAOS</h1>
+      <div class="first-form-row">
+        <div class="form-row">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first_name">
+        </div>
+        <div class="form-row">
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last_name">
+        </div>
       </div>
-      <div class="form-row">
-        <label for="last-name">Last Name:</label>
-        <input type="text" id="last-name" name="last_name">
+      <div class="second-form-row">
+        <div class="form-row">
+          <label for="email-address">Email:</label>
+          <input type="email" id="email-address" name="email_address">
+        </div>
+        <div class="form-row">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password">
+        </div>
       </div>
-    </div>
-
-    <div class="second-form-row">
-      <div class="form-row">
-        <label for="email-address">Email:</label>
-        <input type="email" id="email-address" name="email_address">
+      <div class="third-form-row">
+        <div class="form-row">
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirmed_password">
+        </div>
+        <div class="form-row">
+          <label for="phone-number">Phone Number:</label>
+          <input type="tel" id="phone-number" name="phone_number">
+        </div>
       </div>
-      <div class="form-row">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password">
+      <div id="submit-button-container">
+        <button type="submit" form="personal-info-form">Create Account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
       </div>
-    </div>
-
-    <div class="third-form-row">
-      <div class="form-row">
-        <label for="confirm-password">Confirm Password:</label>
-        <input type="password" id="confirm-password" name="confirmed_password">
-      </div>
-      <div class="form-row">
-        <label for="phone-number">Phone Number:</label>
-        <input type="tel" id="phone-number" name="phone_number">
-      </div>
-    </div>
-
-  </form>
-
-  <button type="submit" form="personal-info-form">Create Account</button>
-  <p>Already have an account? <a href="#">Log in</a></p>
+    </form>
+  </div>
 
 </body>
 </html>
