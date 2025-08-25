@@ -75,6 +75,28 @@ form {
   display: block;
 }
 
+.form-row input[type="text"]:valid,
+.form-row input[type="email"]:valid,
+.form-row input[type="password"]:valid,
+.form-row input[type="tel"]:valid {
+  border: 3px solid #0FFF50;
+}
+
+.form-row input[type="text"]:invalid,
+.form-row input[type="email"]:invalid,
+.form-row input[type="password"]:invalid,
+.form-row input[type="tel"]:invalid {
+  border: 3px solid #FF3131;
+}
+
+.form-row input[type="text"]:focus,
+.form-row input[type="email"]:focus,
+.form-row input[type="password"]:focus,
+.form-row input[type="tel"]:focus {
+  outline: none;
+  border: 3px solid #1F51FF;
+}
+
 .first-form-row {
   margin-top: 30px;
   display: flex;
@@ -93,8 +115,14 @@ form {
 
 h1 {
   color: white;
+  margin-bottom: 50px;
+  margin-top: 30px;
   text-align: center;
   text-shadow: black 1px 0 10px;
+}
+
+#required-label {
+  font-size: 20px;
 }
 
 #submit-button-container {
@@ -114,11 +142,30 @@ button[type="submit"] {
   border-radius: 10px;
 }
 
+button[type="submit"]:hover {
+  background-color: rgb(183, 180, 180);
+}
+
+button[type="submit"]:active {
+  color: white;
+  background-color: gray;
+}
+
 figcaption {
   font-size: 18px;
 }
 
-a {
+a[href="#"] {
   text-decoration: none;
   color: black;
+}
+
+a[href="#"]:hover {
+  color: #550000;
+  text-shadow: #550000 1px 0 10px;
+}
+
+a[href="#"]:active {
+  color: #005ABE;
+  text-shadow: #005ABE 1px 0 10px;
 }

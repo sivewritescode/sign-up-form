@@ -20,39 +20,44 @@
     <div id="about-container">
       <p>
         Discover <u>everything</u> about Ken Carson's: A Great Chaos.<br>
-        From snippets and throwaways, to merch and the night of release.
+        From snippets and throwaways, to merch, and the night of release.
       </p>
     </div>
 
     <form id="personal-info-form" action="#" post="post">
       <h1>A GREAT CHAOS</h1>
+      <p id="required-label">
+        Required fields are followed by: <span aria-label="required">*</span>
+      </p>
       <div class="first-form-row">
         <div class="form-row">
-          <label for="first-name">First Name:</label>
-          <input type="text" id="first-name" name="first_name">
+          <label for="first-name">First Name: <span aria-label="required">*</span></label>
+          <input type="text" id="first-name" name="first_name" 
+            minlength="3" maxlength="15" required>
         </div>
         <div class="form-row">
-          <label for="last-name">Last Name:</label>
-          <input type="text" id="last-name" name="last_name">
+          <label for="last-name">Last Name: (optional)</label>
+          <input type="text" id="last-name" name="last_name" minlength="3" maxlength="15">
         </div>
       </div>
       <div class="second-form-row">
         <div class="form-row">
-          <label for="email-address">Email:</label>
-          <input type="email" id="email-address" name="email_address">
+          <label for="email-address">Email: <span aria-label="required">*</span></label>
+          <input type="email" id="email-address" name="email_address"
+            placeholder="you@example.com" required>
         </div>
         <div class="form-row">
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password">
+          <label for="password">Password: <span aria-label="required">*</span></label>
+          <input type="password" id="password" name="password" required>
         </div>
       </div>
       <div class="third-form-row">
         <div class="form-row">
-          <label for="confirm-password">Confirm Password:</label>
-          <input type="password" id="confirm-password" name="confirmed_password">
+          <label for="confirm-password">Confirm Password: <span aria-label="required">*</span></label>
+          <input type="password" id="confirm-password" name="confirmed_password" required>
         </div>
         <div class="form-row">
-          <label for="phone-number">Phone Number:</label>
+          <label for="phone-number">Phone Number: (optional)</label>
           <input type="tel" id="phone-number" name="phone_number">
         </div>
       </div>
